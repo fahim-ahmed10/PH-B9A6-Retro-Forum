@@ -14,23 +14,92 @@
 </head>
 
 <body>
-    <header class="mt-5 max-w-[640px] md:max-w-[768px] lg:max-w-[1024px] xl:max-w-[1280px] m-auto">
+    <header class="mt-6 max-w-[640px] md:max-w-[768px] lg:max-w-[1024px] xl:max-w-[1280px] m-auto">
         <nav>
             <div class="navbar bg-base-100">
+                <div class="navbar-start">
+                  <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn mr-4 text-white bg-[#797dfc] hover:bg-[#8488fe] lg:hidden">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                    </div>
+                    <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-[265px]">
+                        <div class="flex gap-4 pr-6">
+                            <a class="btn tooltip  tooltip-bottom border-[#f1f1f1] p-4 rounded-full" data-tip="Home" href=""><img
+                                    class="w-4 h-4" src="./images/icons8-home-50.png" alt="home"></a>
+                            <a class="btn tooltip  tooltip-bottom border-[#f1f1f1] p-4 rounded-full" data-tip="Tooltip" href=""><img
+                                    class="w-4 h-4" src="./images/icons8-pencil-50.png" alt="pencil"></a>
+                            <a class="btn tooltip  tooltip-bottom border-[#f1f1f1] p-4 rounded-full" data-tip="Profile" href=""><img
+                                    class="w-4 h-4" src="./images/icons8-add-user-male-50.png" alt="user"></a>
+                            <a class="btn tooltip  tooltip-bottom border-[#f1f1f1] p-4 rounded-full" data-tip="Flag" href=""><img
+                                    class="w-4 h-4" src="./images/icons8-flag-50.png" alt="flag"></a>
+                        </div>
+                  </div>
+                  <a class="font-extrabold text-3xl">ReTro</a>
+                </div>
+           
+                <div class="navbar-end">
+                    <div class="gap-4 pr-6 hidden lg:flex">
+                        <a class="btn tooltip border-[#f1f1f1] p-4 rounded-full" data-tip="Home" href=""><img
+                                class="w-4 h-4" src="./images/icons8-home-50.png" alt="home"></a>
+                        <a class="btn tooltip border-[#f1f1f1] p-4 rounded-full" data-tip="Tooltip" href=""><img
+                                class="w-4 h-4" src="./images/icons8-pencil-50.png" alt="pencil"></a>
+                        <a class="btn tooltip border-[#f1f1f1] p-4 rounded-full" data-tip="Profile" href=""><img
+                                class="w-4 h-4" src="./images/icons8-add-user-male-50.png" alt="user"></a>
+                        <a class="btn tooltip border-[#f1f1f1] p-4 rounded-full" data-tip="Flag" href=""><img
+                                class="w-4 h-4" src="./images/icons8-flag-50.png" alt="flag"></a>
+                    </div>
+                    <a class="btn rounded-3xl px-5 bg-[#797dfc] hover:bg-[#8488fe] text-white text-base">Sign In</a>
+                </div>
+              </div>
+
+
+
+
+
+            <!-- <div class="navbar bg-base-100">
                 <div class="navbar-start">
                     <a class="font-extrabold text-3xl">ReTro</a>
                 </div>
                 <div class="navbar-end">
+                    <div class="flex-none">
+                        <ul class="menu menu-horizontal px-1">
+                            <li>
+                                <details>
+                                    <summary>
+                                    </summary>
+                                    <ul class="p-2 bg-base-100 rounded-t-none">
+                                        <div class="flex flex-col gap-4 pr-6">
+                                            <a class="btn tooltip border-[#f1f1f1] p-4 rounded-full" data-tip="Home"
+                                                href=""><img class="w-4 h-4" src="./images/icons8-home-50.png"
+                                                    alt="home"></a>
+                                            <a class="btn tooltip border-[#f1f1f1] p-4 rounded-full" data-tip="Tooltip"
+                                                href=""><img class="w-4 h-4" src="./images/icons8-pencil-50.png"
+                                                    alt="pencil"></a>
+                                            <a class="btn tooltip border-[#f1f1f1] p-4 rounded-full" data-tip="Profile"
+                                                href=""><img class="w-4 h-4" src="./images/icons8-add-user-male-50.png"
+                                                    alt="user"></a>
+                                            <a class="btn tooltip border-[#f1f1f1] p-4 rounded-full" data-tip="Flag"
+                                                href=""><img class="w-4 h-4" src="./images/icons8-flag-50.png"
+                                                    alt="flag"></a>
+                                        </div>
+                                    </ul>
+                                </details>
+                            </li>
+                        </ul>
+                    </div>
                     <div class="flex gap-4 pr-6">
-                        <a class="btn border-[#f1f1f1] p-4 rounded-full" href=""><img class="w-4 h-4" src="./images/icons8-home-50.png" alt="home"></a>
-                        <a class="btn border-[#f1f1f1] p-4 rounded-full" href=""><img class="w-4 h-4" src="./images/icons8-pencil-50.png" alt="pencil"></a>
-                        <a class="btn border-[#f1f1f1] p-4 rounded-full" href=""><img class="w-4 h-4" src="./images/icons8-add-user-male-50.png" alt="user"></a>
-                        <a class="btn border-[#f1f1f1] p-4 rounded-full" href=""><img class="w-4 h-4" src="./images/icons8-flag-50.png" alt="flag"></a>
+                        <a class="btn tooltip border-[#f1f1f1] p-4 rounded-full" data-tip="Home" href=""><img
+                                class="w-4 h-4" src="./images/icons8-home-50.png" alt="home"></a>
+                        <a class="btn tooltip border-[#f1f1f1] p-4 rounded-full" data-tip="Tooltip" href=""><img
+                                class="w-4 h-4" src="./images/icons8-pencil-50.png" alt="pencil"></a>
+                        <a class="btn tooltip border-[#f1f1f1] p-4 rounded-full" data-tip="Profile" href=""><img
+                                class="w-4 h-4" src="./images/icons8-add-user-male-50.png" alt="user"></a>
+                        <a class="btn tooltip border-[#f1f1f1] p-4 rounded-full" data-tip="Flag" href=""><img
+                                class="w-4 h-4" src="./images/icons8-flag-50.png" alt="flag"></a>
                     </div>
                     <a class="btn rounded-3xl px-5 bg-[#797dfc] hover:bg-[#8488fe] text-white text-base">Sign In</a>
-
                 </div>
-            </div>
+            </div> -->
         </nav>
     </header>
 
