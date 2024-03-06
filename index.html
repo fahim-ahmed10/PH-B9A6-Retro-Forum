@@ -69,20 +69,41 @@
         <div class="min-h-[550px] bg-[#12132D] bg-cover rounded-3xl"
             style="background-image: url('./images/bgbanner.png'); background-position: 20% 150px; background-repeat: no-repeat;">
             <div class="hero-overlay bg-opacity-60"></div>
-            <div class="flex w-[100%]">
-                <div class="w-[50%] font-sans px-[90px] py-[110px] flex flex-col">
+            <div class="flex flex-col md:flex-row w-[100%]">
+                <div class="w-full md:w-[60%] lg:w-[70%] font-sans px-[50px] lg:px-[90px] py-[110px] flex flex-col">
                     <h1 class="text-5xl text-white font-extrabold mb-5">Welcome to the</h1>
                     <p class="flex text-5xl text-white font-extrabold mb-7"><span class="text-[#6d71e5]">R</span><span class="text-[#6568d3]">e</span><span class="text-[#494b9b]">T</span><span class="text-[#444792]">r</span><span class="text-[#353774] pr-4">o</span>Forum</p>
                     <p class="text-2xl leading-10 text-[#d3d4d8] ">Share your favorite opinion and win and wp forum coffee mug!</p>
-                    <div class="mt-3 relative">
-                        <input id="couponInputField" class="w-[80%] h-[56px]  p-3 rounded-3xl text-lg outline-slate-200"
+                    <div class="mt-3">
+                        <input id="couponInputField" class="w-full lg:w-[50%] h-[56px]  p-3 rounded-3xl text-lg outline-slate-200"
                             type="text" placeholder="Search here anything">
-                        <button id="discountBtn"
-                            class="absolute pointer-events-none right-[100px] text-lg text-white top-1.5 rounded-3xl bg-[#797dfc] px-8 py-2">Search</button>
+                        <div class="relative">
+                            <button id="discountBtn"
+                            class="absolute pointer-events-none text-lg text-white rounded-3xl bg-[#797dfc] top-[-50px] right-1 md:right-[2%] lg:right-[51%] px-8 py-2">Search</button>
+                        </div>
                     </div>
                 </div>
-                <div class="w-40%">
-
+                <div class="w-full md:w-[40%] lg:w-[30%] relative">
+                    <div class="flex relative md:absolute lg:absolute m-auto justify-center w-[280px] bg-white px-7 py-5 rounded-3xl leading-9 top-[-50px] md:top-[35%] lg:top-[35%]">
+                        <table>
+                            <tr>                                
+                                <td class="pr-8">Registered Users</td>
+                                <td>01</td>
+                            </tr>
+                            <tr>
+                                <td>Forum</td>
+                                <td>05</td>
+                            </tr>
+                            <tr>
+                                <td>Topics</td>
+                                <td>01</td>
+                            </tr>
+                            <tr>
+                                <td>Replies</td>
+                                <td>01</td>
+                            </tr>
+                        </table>
+                    </div>
                 </div>
             </div>
         </div>
