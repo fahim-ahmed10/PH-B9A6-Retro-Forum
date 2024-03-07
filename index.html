@@ -13,7 +13,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body>
+<body class="mx-2 md:mx-4 lg:mx-6">
     <!-- header start -->
     <header class="mt-6 max-w-[640px] md:max-w-[768px] lg:max-w-[1024px] xl:max-w-[1280px] m-auto">
         <nav>
@@ -122,39 +122,18 @@
             <p class="w-[60%] text-sm text-[#77777e]">Yes, you can run until tests and view the result directly within
                 the app. The integrated testing features allow for a streamlined</p>
         </div>
-        <div class="mt-8 flex gap-4">
-            <div id="post_container" class="w-[70%] flex flex-col gap-5">                
+        <div class="mt-8 flex flex-col md:flex-row lg:flex-row gap-8 md:gap-2 lg:gap-4">
+            <div id="post_container" class="w-full lg:w-[70%] flex flex-col gap-5">                
             </div>
-            <div class="w-[30%]">
-                <div class="bg-[#f3f3f4] p-4 rounded-3xl">
+            <div class="w-full lg:w-[30%]">
+                <div id="title_container" class="bg-[#f3f3f4] p-4 rounded-3xl">
                     <div class="flex justify-between items-center">
                         <h1 class="text-lg font-bold">Title</h1>
                         <div class="flex gap-2">
                             <img class="w-6 h-6" src="./images/icons8-done-64.png" alt="Done">
-                            <p>Mark as read (<span>4</span>)</p>
+                            <p>Mark as read (<span id="mark_as_read">0</span>)</p>
                         </div>
-                    </div>
-                    <div class="flex justify-between items-center mt-3 bg-white p-3 rounded-2xl">
-                        <p class="w-[60%] text-normal font-normal">10 Kids Unaware of Their Halloween Costume</p>
-                        <div class="flex gap-w">
-                            <img class="w-6 h-6" src="./images/icons8-eye-24.png" alt="eye">
-                            <p class="pl-2 text-[#77777e]">1,568</p>
-                        </div>
-                    </div>
-                    <div class="flex justify-between items-center mt-3 bg-white p-3 rounded-2xl">
-                        <p class="w-[60%] text-normal font-normal">10 Kids Unaware of Their Halloween Costume</p>
-                        <div class="flex gap-w">
-                            <img class="w-6 h-6" src="./images/icons8-eye-24.png" alt="eye">
-                            <p class="pl-2 text-[#77777e]">1,568</p>
-                        </div>
-                    </div>
-                    <div class="flex justify-between items-center mt-3 bg-white p-3 rounded-2xl">
-                        <p class="w-[60%] text-normal font-normal">10 Kids Unaware of Their Halloween Costume</p>
-                        <div class="flex gap-w">
-                            <img class="w-6 h-6" src="./images/icons8-eye-24.png" alt="eye">
-                            <p class="pl-2 text-[#77777e]">1,568</p>
-                        </div>
-                    </div>
+                    </div>                    
                 </div>                
             </div>
         </div>
