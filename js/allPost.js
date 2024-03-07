@@ -14,11 +14,13 @@ const displayPosts = (posts) => {
   for (const post of posts) {
     console.log(post);
     const postCard = document.createElement("div");
-    postCard.classList = `flex gap-5 border-none bg-[#f3f3f5] rounded-3xl`;
+    const dynamicId = `${post.id}`;
+    postCard.setAttribute('id', dynamicId);
+    postCard.classList = `flex gap-5 bg-[#f3f3f5] rounded-3xl`;
     postCard.innerHTML = `
          <div class="w-[10%] relative mt-9 left-6">
                         <div class="relative">
-                            <div class="is_active w-2 h-2 rounded-full right-0 absolute"></div>
+                            <div class="is_active w-2.5 h-2.5 rounded-full right-0 absolute"></div>
                             <img class="w-12 h-11 rounded-xl" src="${post.image}" alt="Image">
                         </div>
                        
@@ -41,25 +43,44 @@ const displayPosts = (posts) => {
                                 <h5 class="ml-2 mr-5 mb-3">${post.posted_time} min</h5>
                             </div>
                             <div>
+                                <button onclick="inboxButtonClicked(${post.id})">
                                 <img class="w-7 h-7 bg-[#10b981] rounded-full p-1"
                                     src="./images/icons8-open-envelope-24.png" alt="Message Inbox">
+                                </button>
                             </div>
                         </div>
                     </div>
                     `;
     postContainer.appendChild(postCard);
-    const isActive = postCard.querySelector('.is_active');
-        isActive.textContent = post.isActive;
-        const status = isActive.textContent;
-        // console.log(status);
-        if(status === 'true'){
-            isActive.textContent = '';
-            isActive.classList.add("bg-green-600");
-        }else{
-            isActive.textContent = '';
-            isActive.classList.add("bg-[#ff3434]");
-        }
+
+    // active status checking whether online or offline. if online set green color else red color
+    const isActive = postCard.querySelector(".is_active");
+    isActive.textContent = post.isActive;
+    const status = isActive.textContent;
+    // console.log(status);
+    if (status === "true") {
+      isActive.textContent = "";
+      isActive.classList.add("bg-green-600");
+    } else {
+      isActive.textContent = "";
+      isActive.classList.add("bg-[#ff3434]");
+    }
   }
 };
+
+//post inbox button click function to get the id of that post
+const inboxButtonClicked = element =>{
+    console.log(element);
+    const clickedId = document.getElementById(element);
+    //checking the border-color exists or not
+    const hasClass = clickedId.classList.contains('border-[#797dfc]');
+    if(hasClass){
+      clickedId.classList.remove('border','border-[#797dfc]','hover:bg-[#f1f1fe]');
+    }
+    else{
+      clickedId.classList.add('border','border-[#797dfc]','hover:bg-[#f1f1fe]')
+    }       
+                                                               
+}
 
 loadPhone();
