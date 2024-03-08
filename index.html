@@ -124,6 +124,7 @@
         </div>
         <div class="mt-8 flex flex-col md:flex-row lg:flex-row gap-8 md:gap-2 lg:gap-4">
             <div id="post_container" class="w-full lg:w-[70%] flex flex-col gap-5">
+                <!-- inside this dynamic post available -->
             </div>
             <div class="w-full lg:w-[30%]">
                 <div id="title_container" class="bg-[#f3f3f4] p-4 rounded-3xl">
@@ -166,32 +167,15 @@
             <p class="w-[60%] text-lg text-[#77777e]">Yes, you can run until tests and view the result directly within
                 the app. The integrated testing features allow for a streamlined</p>
         </div>
-        <div class="mt-10 flex flex-col md:flex-row justify-center items-center md:justify-between gap-6 md:gap-2">
-            <div class="card w-[374px] bg-base-100 shadow-xl border border-[#d6d6d6] p-5">
-                <figure><img class="rounded-3xl" src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
-                        alt="Shoes" /></figure>
-                <div class="card-body px-0 pb-0">
-                    <div class="flex gap-2">
-                        <img class="w-6 h-6" src="./images/icons8-calander-64.png" alt="calander">
-                        <p class="text-[#717181]">29 January 2024</p>
-                    </div>
-                    <h2 class="card-title font-bold text-xl md:text-lg">What will a mars habitat force that impact in our daily life!!!</h2>
-                    <p class="text-[#717181]">Yes, you can run unit tests and view the results directly within the app.</p>
-                    <div class="mt-5 flex gap-6">
-                        <img class="w-12 h-12 rounded-full bg-red-600" src="./images/joinforum.png" alt="Image">
-                        <div>
-                            <h1 class="text-xl md:text-lg lg:text-xl font-bold">Cameron Williamson</h1>
-                            <h5 class="text-[#717181]">Unknown</h5>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
+        <div id="latest_post"
+            class="mt-10 flex flex-col md:flex-row lg:flex-row justify-center items-center md:justify-between gap-6 md:gap-2">
+            <!-- Inside this dynamic card available -->
         </div>
     </section>
     <!-- latest post section end -->
 
     <script src="./js/allPost.js" async defer></script>
+    <script src="./js/latestPost.js" async defer></script>
 </body>
 
 </html>
