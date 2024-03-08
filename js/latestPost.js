@@ -14,7 +14,7 @@ const displayLatestPost = (posts) => {
     const postCard = document.createElement("div");
     postCard.classList = `card w-[374px] h-[482px] bg-base-100 shadow-xl border border-[#d6d6d6] p-5`;
     postCard.innerHTML = `
-        <figure><img class="rounded-3xl" src="${post.cover_image}"
+        <figure class="h-[190px]"><img class="w-full h-full cover rounded-3xl" src="${post.cover_image}"
                         alt="Shoes" /></figure>
                 <div class="card-body px-0 pb-0">
                     <div class="flex gap-2">
