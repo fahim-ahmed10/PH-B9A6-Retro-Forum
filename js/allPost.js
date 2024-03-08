@@ -120,7 +120,7 @@ const displayTitle = async (clickedId) => {
                           </div>
                           `;
     titleContainer.appendChild(titleElement);
-  }else{
+  } else {
     return null;
   }
 };
